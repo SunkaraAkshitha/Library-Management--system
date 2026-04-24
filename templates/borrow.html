@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Borrow Book</h2>
+<form method="POST">
+<label>Select Student</label>
+<select name="student">
+{% for student in students %}
+<option value="{{ student.id }}">
+{{ student.name }}
+</option>
+{% endfor %}
+</select>
+<br><br>
+<label>Select Book</label>
+<select name="book">
+{% for book in books %}
+<option value="{{ book.id }}">
+{{ book.title }}
+</option>
+{% endfor %}
+</select>
+<br><br>
+<button type="submit">Borrow</button>
+</form>
+{% endblock %}
