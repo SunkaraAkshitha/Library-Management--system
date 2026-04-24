@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Libraray Dashboard</h2>
+<div class="dashboard">
+    <div class="card">
+        <h3>Total Students</h3>
+        <p>{{student}}</p>
+    </div>
+    <div class="card">
+        <h3>Toatl Books</h3>
+        <p>{{book}}</p>
+    </div>
+    <div class="card">
+        <h3>Total Borrowed Students</h3>
+        <p>{{borrow}}</p>
+    </div>
+</div>
+{% endblock %}
