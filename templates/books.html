@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Books List</h2>
+<ul>
+{% for book in books %}
+<li>
+{{ book.id }} - {{ book.title }} - {{ book.author }}
+{% if book.available %}
+(Available)
+{% else %}
+(Borrowed)
+{% endif %}
+</li>
+{% endfor %}
+</ul>
+{% endblock %}
