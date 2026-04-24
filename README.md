@@ -1,6 +1,6 @@
 # Library-Management--system
 Flask-based Library Management System with SQLAlchemy
-# Smart Library Management System
+# Library Management System
 
 This is a web-based library management system built using Flask and SQLAlchemy.
 
