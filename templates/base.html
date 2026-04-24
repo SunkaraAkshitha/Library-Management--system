@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Library</title>
+</head>
+<body>
+     
+    <h1>Libraray Management System</h1>
+    <nav>
+    <a href="/">Home</a>
+    <a href="/add_student">Add student</a>
+    <a href="/students">view students</a>
+    <a href="/add_book">Add book</a>
+    <a href="/books">View books</a>
+    <a href="/borrow">borrow</a>
+    <a href="/borrowed">view borrowed</a>
+    <a href="/search_book">Search Books</a>
+    </nav>
+    <div class="container">
+    <hr>
+    {% block content %}
+    {% endblock %}
+    </div>
+</body>
+</html>
