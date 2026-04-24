@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Search Books</h2>
+
+<form method="POST">
+
+<input type="text" name="keyword" placeholder="Enter book title" required>
+
+<button type="submit">Search</button>
+
+</form>
+
+<br>
+
+<ul>
+
+{% for book in books %}
+
+<li>
+{{ book.title }} - {{ book.author }}
+</li>
+
+{% endfor %}
+
+</ul>
+
+{% endblock %}
