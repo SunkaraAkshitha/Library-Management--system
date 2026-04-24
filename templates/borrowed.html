@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Borrowed Books</h2>
+
+<table border="1">
+
+<tr>
+<th>ID</th>
+<th>Student</th>
+<th>Book</th>
+<th>Borrow Date</th>
+<th>Action</th>
+</tr>
+
+{% for item in data %}
+
+<tr>
+<td>{{ item.id }}</td>
+<td>{{ item.name }}</td>
+<td>{{ item.title }}</td>
+<td>{{ item.borrow_date }}</td>
+
+<td>
+<a href="/return/{{ item.id }}">Return</a>
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% endblock %}
